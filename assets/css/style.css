@@ -60,21 +60,26 @@ header nav {
   background-image: url("../images/sloan.jpg");
   background-size: cover;
   grid-area: headerNav;
-  color: #ffffff;
-  float: right;
+  
 }
 
 .header nav ul {
-  display: inline-block;
+  display: block;
   justify-content: space-evenly;
   list-style-type: none;
+  float: right;
   
 }
 
 header nav ul li {
-  display: inline-block;
+  display: inline;
   margin: -50px 0px 60px 10px;
 
+}
+
+h5 {
+  color: #ffffff;
+  float: right;
 }
 
 .hero-banner {
