@@ -5,8 +5,8 @@
 
 * {
   box-sizing: border-box;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 body {
@@ -45,10 +45,10 @@ header {
 header h1 { 
   font-size: 38px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: aquamarine; 
+  background-image: url("../images/02-run-buddy.jpg");
   height: 90px;
   grid-area: headerH1;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 
@@ -56,20 +56,25 @@ header nav {
   display: inherit;
   height: 90px;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  background-color: aquamarine;
+  font-size: 20px;
+  background-image: url("../images/sloan.jpg");
+  background-size: cover;
   grid-area: headerNav;
+  color: #ffffff;
+  float: right;
 }
 
 .header nav ul {
   display: inline-block;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style-type: none;
+  
 }
 
 header nav ul li {
   display: inline-block;
-  justify-content: center;
-  margin: -50px 0px 60px 10px; 
+  margin: -50px 0px 60px 10px;
+
 }
 
 .hero-banner {
@@ -100,7 +105,8 @@ header nav ul li {
   color: antiquewhite;
   justify-content: left;
   grid-area: about;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/02-portfolio-5.jpg");
+  background-size: cover;
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: 
@@ -109,19 +115,21 @@ header nav ul li {
 
 #about h2 {
   grid-area: h2;
+  
 }
 
 #about p {
   grid-area: p;
+  color: rgb(179, 206, 24);
 }
 
 #work {
   padding: 20px; 
-  color: antiquewhite;
+  color: darkorange;
   grid-area: work;
   display: grid;
   grid-template-rows: 30% 35% 35% ;
-  grid-template-columns: 32% 34% 34%;
+  grid-template-columns: 20% 40% 40%;
   grid-template-areas: 
   "h2 regression regression"
   "h2 kNearestNeighbours trees"
@@ -137,26 +145,48 @@ header nav ul li {
   grid-area: regression;
   background-image: url("../images/02-portfolio-2.jpg");
   background-size: cover;
+  text-align: center;
 }
 
-#KNearesNeighbours {
+#Regression h4 {
+  margin-top: -20px;
+  color: darkorange;
+  font-size: 28px;
+}
+
+#KNearestNeighbours {
   grid-area: kNearestNeighbours;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-size: cover;
+  font-size: 28px;
+}
+
+#KNearestNeighbours h4 {
+  color: darkorange;
 }
 
 #Trees {
   grid-area: trees;
   background-image: url("../images/02-portfolio-3.jpg");
+  background-size: cover;
+  color: darkorange;
+  font-size: 28px;
 }
 
 #NeuralNetworks {
   grid-area: neuralNetworks;
   background-image: url("../images/02-portfolio-4.jpg");
+  background-size: cover;
+  color: darkorange;
+  font-size: 28px;
 }
 
 #Transformers {
   grid-area: transformers;
   background-image: url("../images/02-portfolio-3.jpg");
+  background-size: cover;
+  color: darkorange;
+  font-size: 28px;
 }
 
 #contact {
