@@ -1,14 +1,18 @@
+/* Variables used in project */
+
 :root {
   --antiqueW : antiquewhite;
   --darkOrg : darkOrange;
 }
 
-
+/* Attributes for whole Page */
 * {
   box-sizing: border-box;
   padding: 10px;
   margin: 10px;
 }
+
+/* Body Attributes */
 
 body {
   margin: 0;
@@ -17,6 +21,9 @@ body {
   background-color: #667795;
   max-height: fit-content;
 }
+
+
+/* Hedear Attributes */
 
 header {
   padding: 20px; 
@@ -33,7 +40,7 @@ header {
 header h1 { 
   font-size: 38px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/dark-ai.jpg");
   height: 90px;
   grid-area: headerH1;
   margin-top: 10px;
@@ -72,6 +79,8 @@ img {
   grid-area: image;
 }
 
+/* Attributes for h4 and h5 headings */
+
 h4 {
   color: var(--antiqueW);
   float: right;
@@ -81,6 +90,8 @@ h5 {
   color: var(--antiqueW);
   float: right;
 }
+
+/* Attribute settings for hero banner */
 
 .hero-banner {
   color: var(--antiqueW);
@@ -93,6 +104,8 @@ h5 {
     text-align: center;
 }
 
+/* Attribute settings for page wrapper */
+
 .page-wrapper {
   display: grid;
   min-height: 500px;
@@ -104,6 +117,8 @@ h5 {
     "work work work"
     "contact contact contact";
 }
+
+/* Set the about me portion of page */
 
 #about {
   padding: 20px;
@@ -127,6 +142,8 @@ h5 {
   grid-area: p;
   color: rgb(179, 206, 24);
 }
+
+/* Make the ork section of page */
 
 #work {
   background-color: var(--antiqueW);
@@ -206,6 +223,8 @@ h5 {
   color: var(--darkOrg);
 }
 
+/*  Make the Contact me section */
+
 #contact {
   padding: 20px;
   color: var(--antiqueW);
@@ -222,8 +241,10 @@ h5 {
 
 #contact ul li {
   display: inherit;
-  margin-top: -10px;
+  margin-top: -20px;
 }
+
+/* CSS to make pictures increase in size when hoverd over with mouse */
 
 .type:hover {
   transform: scale(1.2);
