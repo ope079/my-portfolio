@@ -146,7 +146,7 @@ h5 {
 /* Make the ork section of page */
 
 #work {
-  background-color: var(--antiqueW);
+  background-image: url("../images/dark-ai.jpg");
   padding: 20px; 
   color: var(--darkOrg);
   grid-area: work;
